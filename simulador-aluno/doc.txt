@@ -1,0 +1,17 @@
+- docker-compose up -d
+- docker-compose ps
+- docker exec -it simulator bash
+- go mod init github.com/dnokaneda/imersao-fsfc2-simulator
+
+
+- kafka-console-consumer --bootstrap-server=localhost:9092 --topic=readtest
+
+#local: simulador-aluno - docker-compose up -d
+#local: simulador-aluno - docker exec -it simulator bash
+#local: simulador-aluno - go run main.go
+
+#local: simulador-aluno/.docker/kafka - docker-compose up -d
+#local: simulador-aluno/.docker/kafka - docker exec -it kafka-kafka-1 bash
+
+#local: simulador-aluno/.docker/kafka - kafka-console-consumer --bootstrap-server=localhost:9092 --topic=route.new-position --group=terminal
+#local: simulador-aluno/.docker/kafka - kafka-console-producer --bootstrap-server=localhost:9092 --topic=route.new-direction
