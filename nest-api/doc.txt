@@ -1,0 +1,12 @@
+- npx @nestjs/cli new nest-api
+- docker-compose up
+
+- chmod +X .docker/entrypoint.sh (dont work?!)
+- git update-index --add --chmod=+x script.sh (???)
+
+- docker-compose exec app bash
+- nest g resource routes
+
+- npm install mongoose @nestjs/mongoose --save
+- npm install @nestjs/config --save
+- npm instal kafkajs @nestjs/microservices --save
